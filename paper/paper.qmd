@@ -3,7 +3,7 @@ title: "Marriage"
 subtitle: None
 author: 
   - Tommy Fu
-thanks: "Code and data are available at: LINK."
+thanks: "Code and data are available at: https://github.com/YichengFu/week3_activity."
 date: today
 date-format: long
 abstract: ""
