@@ -1,12 +1,12 @@
 ---
-title: "My title"
-subtitle: "My subtitle if needed"
+title: "Marriage"
+subtitle: None
 author: 
-  - Rohan Alexander
+  - Tommy Fu
 thanks: "Code and data are available at: LINK."
 date: today
 date-format: long
-abstract: "First sentence. Second sentence. Third sentence. Fourth sentence."
+abstract: ""
 format: pdf
 number-sections: true
 bibliography: references.bib
@@ -19,31 +19,29 @@ bibliography: references.bib
 
 library(tidyverse)
 
-data <- read_csv(here::here("data/analysis_data/analysis_data.csv"))
+data <- read_csv(here::here("data/analysis_data/cleaned_data.csv"))
 
 ```
 
 
 # Introduction
 
-You can and should cross-reference sections and sub-sections. We use @talia, @opendatatorotno, and @rohan.
-
-The remainder of this paper is structured as follows. @sec-mydatasection
-
-
 
 # Data {#sec-mydatasection}
 
-Some of our data is of penguins (@fig-marriage), from @palmerpenguins.
+from @opendatatorotno.
 
 ```{r}
 #| label: fig-marriage
 #| fig-cap: Bills of penguins
 #| echo: false
 
-data |> 
-  ggplot(aes(x = date, y = marriage_licenses)) +
-  geom_point()
+
+
+ggplot(data = data, aes(x = year, y = marriage_licenses)) +
+  geom_bar(stat = "identity") + labs(title = "Number of Marriage per Year from 2011 to 2024",x = "Year", y = "Number of Marriage")
+
+```
 
 ```
 
