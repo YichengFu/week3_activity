@@ -4,9 +4,9 @@ subtitle: None
 author: 
   - Tommy Fu
 thanks: "Code and data are available at: https://github.com/YichengFu/week3_activity."
-date: today
+date: 19 September 2024
 date-format: long
-abstract: ""
+abstract: "This paper focuses on people's finance and its impact on marriage using data from opendatatoronto. This paper uses the data to explorre the impact of marriage on individuals financial status like income employment and etc. The author utilized regression models to look into the patterns. The results show that marriage often leads to higher employment or financial situation such as higher income."
 format: pdf
 number-sections: true
 bibliography: references.bib
